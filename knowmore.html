@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teachers| Learniverse</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #111;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .slide-card {
+            background: #F8EFE5;
+            box-shadow: 6px 7px 8px -7px #8a93fb;
+            margin: 0 40px;
+            padding: 45px 63px;
+            border-radius: 20px;
+            border: 0;
+            cursor: grab;
+        }
+
+        .slide-card .slide-card-img-top {
+            max-width: 100px;
+            border-radius: 50%;
+            margin: 15px auto 0;
+            box-shadow: 0 8px 20px -4px #8a86e8;
+            width: 100px;
+            height: 100px;
+        }
+
+        .slide-card h5 {
+            color: rgb(36, 48, 114);
+            font-size: 21px;
+            margin: 15px 0;
+        }
+
+        .slide-card h5 span {
+            font-size: 18px;
+            color: rgb(241, 157, 29);
+        }
+
+        .slide-card p {
+            font-size: 18px;
+            color:rgb(61, 61, 69);
+            padding-bottom: 15px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+        }
+
+        /* transform active card  */
+        .swiper-slide.swiper-slide-active {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="swiper">
+        
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+                <div class="slide-card ">
+                    <img class="slide-card-img-top" src="teacher5.jpeg" alt="" />
+                    <div class="slide-card-body">
+                        <h5>
+                            Cooper Kristin <br/>
+                            <span> Digital Marketing </span>
+                        </h5>
+                        <p class="slide-card-text">
+                            “ Welcome to the exciting world of digital marketing!I am thrilled to guide you through the intricacies of this dynamic
+                            field, from understanding the power of social media
+                            marketing and search engine optimization to crafting compelling content that engages audiences across various digital
+                            channels.Let's embark on this exciting adventure together and pave the way for your success in the ever-evolving digital
+                            world. ”
+                        </p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="swiper-slide">
+                <div class="slide-card ">
+                    <img class="slide-card-img-top" src="teacher2.jpg" alt="" />
+                    <div class="slide-card-body">
+                        <h5>
+                            Leslie Alexander <br />
+                            <span> UI/UX Designer </span>
+                        </h5>
+                        <p class="slide-card-text">
+                            “ As a UI/UX teacher, my passion lies in fostering creativity and shaping the next generation of design
+                            innovators.Together, we explore the principles of design, usability, and human psychology to create intuitive and
+                            delightful user
+                            interfaces.As a UI/UX teacher,
+                            I am committed to nurturing the creative potential of my students and inspiring them to create user experiences that
+                            leave a lasting impression. ”
+                        </p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="swiper-slide">
+                <div class="slide-card ">
+                    <img class="slide-card-img-top" src="teacher 3.jpg" alt="" />
+                    <div class="slide-card-body">
+                        <h5>
+                            Robert Fox<br />
+                            <span> Front-End Developer </span>
+                        </h5>
+                        <p class="slide-card-text">
+                            “ As a passionate and dedicated frontend developer teacher, my mission is to inspire and empower the next generation of
+                            web developers. With a strong foundation in HTML, CSS, and JavaScript, I strive to provide my students with a
+                            comprehensive learning experience that combines theoretical knowledge with practical, hands-on projects.Together, we
+                            embark on a journey to unlock the potential of modern web technologies, fostering creativity and
+                            problem-solving skills. ”
+                        </p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="swiper-slide">
+                <div class="slide-card ">
+                    <img class="slide-card-img-top" src="teacher4.jpeg" alt="" />
+                    <div class="slide-card-body">
+                        <h5>
+                            Albert Flores <br />
+                            <span>Back-End Developer </span>
+                        </h5>
+                        <p class="slide-card-text">
+                            “As a passionate backend developer with several years of experience in the industry, I am excited to embark on this
+                            journey of teaching and mentoring aspiring developers.I am committed to nurturing the next generation of proficient
+                            backend developers, ready to make their mark in the
+                            ever-evolving tech landscape. Let's embark on this enlightening journey of growth and innovation together! ”
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // Default parameters
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            //parameter for center active slide 
+            centeredSlides: true,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

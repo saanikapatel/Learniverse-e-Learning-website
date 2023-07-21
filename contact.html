@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        body{
+            background-color: white;
+
+        }
+        img{
+            width: 500px;
+            height: 300px;
+            padding-top: 150px;
+            padding-left: 40px;
+        }
+
+        #container{
+            display: flex;
+            flex-direction:column;
+        }
+        #para{
+            width: 500px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:rgb(27, 26, 26);
+            padding: 0%;
+            margin: 0%;
+            padding-left: 40px;
+            
+        }
+        
+
+        #talk{
+            color: rgb(27, 26, 26);
+            width: 650px;
+            padding:20px;
+            margin: 0%;
+            position: absolute;
+            top: 120px;
+            right: 150px;
+            background-color: #F8EFE5;
+            border-radius: 25px;
+            
+        }
+        
+        h6{
+            color: red;
+        }
+        
+            
+        #form{
+            display: flex;
+            flex-direction: row;
+            column-gap: 140px;
+            row-gap: 50px;
+            flex-wrap: wrap;
+        }
+
+
+
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .required {
+            color: red;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+        }
+        #query{
+            width: 500px;
+            height: 100px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: rgb(36, 48, 114);
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        h1{
+text-align: center;
+font-size: 40px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>
+        <span style="color: rgb(36, 48, 114);">Contact </span><span style="color:rgb(241, 157, 29) ;">Us</span>
+    </h1>
+    <hr>
+    <img src="contactus.gif" alt="contact us">
+    <br>
+    <br>
+    <div id="container">
+    <div id="para"><b>Looking for more information?Submit your query and a Learniverse representative will follow up with you as soon as possible.Have a common question?<a href="faq.html">Check out our FAQ.</a></b></div>
+    <div id="talk">
+        <h1 style="color: rgb(36, 48, 114);">Talk with our representative</h1>
+        <h6>Fields marked with an asterisk(*) are required</h6>
+        <div id="form">
+            
+                <div class="form-group">
+                    <label for="firstName">First Name <span class="required">*</span></label>
+                    <br>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Last Name <span class="required">*</span></label>
+                    <br>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number <span class="required">*</span></label>
+                    <br>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div id="query">
+                    <label for="query">What would you like to ask? <span class="required">*</span></label>
+                    <br>
+                    <input type="text" id="query" name="query" required>
+                </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+    </div>
+    </div>
+</body>
+</html>

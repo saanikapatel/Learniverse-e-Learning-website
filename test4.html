@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoom on Scroll</title>
+  <style>
+    .image-container {
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .zoom-image {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease;
+      /* Add a smooth transition for the zoom effect */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="image-container">
+    <img src="1.svg" alt="Your Image" class="zoom-image">
+  </div>
+
+  <script>
+    window.addEventListener("scroll", function () {
+      const image = document.querySelector(".zoom-image");
+      const container = document.querySelector(".image-container");
+
+      // Calculate the current scroll position relative to the image container's top
+      const scrollY = window.scrollY - container.offsetTop;
+
+      // Calculate the scale factor based on the scroll position (adjust the scale factor as desired)
+      const scale = 1 + scrollY / 1000;
+
+      // Apply the scale to the image
+      image.style.transform = `scale(${scale})`;
+    });
+  </script>
+</body>
+
+</html>

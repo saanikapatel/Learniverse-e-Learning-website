@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newsletter</title>
+    <style>
+        *,
+        *:before,
+        *:after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+         
+        
+        .popup {
+            background-color:rgb(250, 229, 201);
+            width: 420px;
+            height: 600px;
+            padding: 30px 40px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            border-radius: 8px;
+            
+            text-align: center;
+        }
+
+        #newsletter {
+            display: flex;
+            justify-content: center;
+            
+        }
+        #newsletter img{
+            width: 420px;
+        }
+        #content{
+            display: flex;
+            flex-direction: row;
+            gap: 35px;
+            
+        }
+        #subscribe{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;   
+        }
+        #updates{
+            font-size: 15px;
+        }
+        input[type="email"]{
+            border: none;
+            background-color: rgb(250, 229, 201);
+            width: 150px;
+            height: 50px;
+
+        }
+        input[type="submit"]:hover {
+      background-color: rgb(250, 229, 201); 
+    }
+    input[type="email"]:focus {
+      background-color:rgb(250, 229, 201);
+      border: none;
+    }
+    #foot{
+        display: flex;
+        justify-content: center;
+    }
+    a {
+            display: block;
+            width: 150px;
+            position: relative;
+            margin: 10px auto;
+            text-align: center;
+            background-color: hsl(212, 49%, 40%);
+            border-radius: 20px;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 0;
+        }
+    
+        
+        .popup button {
+            display: block;
+            margin: 0 0 20px auto;
+            background-color: transparent;
+            font-size: 30px;
+            color: #ffffff;
+            background: hsl(212, 49%, 40%);
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 999; 
+        pointer-events: none;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="popup">
+    <button id="close">&times;</button>
+    <div id="newsletter">
+        <img src="1.svg" alt="newsletter">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="content">
+        <div id="subscribe"><b>Subscribe to our <br>newsletter</b>
+        </div>
+        <div id="updates"><i>
+            Get weekly updates on the<br>latest educational news right in your mailbox.</i>
+        </div>
+        
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    
+<div id="foot">
+    <input type="email" name="email" placeholder="Your Email">
+    <a href="#">Subscribe</a>
+    </div>
+    <hr style="color: black; height: 2px ;">
+</div>
+
+<script type="text/javascript">
+    window.addEventListener("load", function () {
+        setTimeout(
+            function open(event) {
+                document.querySelector(".overlay").style.display = "block";
+                document.querySelector(".popup").style.display = "block";
+            },
+            2000
+        )
+    });
+
+
+    document.querySelector("#close").addEventListener("click", function () {
+        document.querySelector(".popup").style.display = "none";
+        document.querySelector(".overlay").style.display = "none";
+    });
+</script>
+</body>
+</html>

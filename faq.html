@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    margin: 0;
+    padding: 20px;
+    }
+    
+    #h1 {
+    color:rgb(36, 48, 114);
+    background-color:white;
+    padding: 30px;
+    text-align: center;
+     }
+
+    #h3{
+        color: rgb(241, 157, 29);
+        background-color:white;
+        padding: 20px;
+        text-align: center;
+     }
+
+    #para{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+
+     }
+    
+    .faq {
+    margin-bottom: 20px;
+    }
+    
+    .question {
+        text-align: left;
+        font-weight: bold;
+        color: #555555;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    
+    .answer {
+    text-align: left;
+    display: none;
+    color: #777777;
+    margin-bottom: 10px;
+    }
+    
+    .answer.show {
+    display: block;
+    }
+
+    #bodi{
+display: flex;
+
+    }
+    #gif{
+        width: 25px;
+    }
+    </style>
+</head>
+<body>
+    <div id="h1"><b>Your Right To Know</b><br>
+    <span id="h3"><h3>Got a question,<br>Get your answer!!</h3></span>
+    <div id="para"><p><i>Below you will find answers to the most common questions you may have on Learniverse.If you still can't find answer to your question, feel free to <a href="contact.html">contact us</a></i></p></div>
+    </div>
+    <br>
+    <br>
+
+    <div id="bodi">
+    <div id="contents">
+    <div class="faq">
+        <div class="question">1. How do I create an account on Learniverse?</div>
+        <div class="answer">To create an account, click on the "Sign Up" or "Login" button on the website's homepage.Fill in the required information such as your name, email address, and password. Follow the prompts to complete the registration process.</div>
+    </div>
+    <div class="faq">
+        <div class="question">2.What courses are available on your website?</div>
+        <div class="answer">Our website offers a wide range of courses across various subjects, including programming, business, arts, languages,
+        and more. You can browse the course catalog or use the search feature to find specific courses of interest.</div>
+    </div>
+    <div class="faq">
+        <div class="question">3.How can I enroll in a course?</div>
+        <div class="answer">Once you've created an account and logged in, you can enroll in a course by visiting the course page and clicking on the
+        "Enroll" or "Join" button. Some courses may have enrollment fees, while others may be free.
+        </div>
+    </div>
+    <div class="faq">
+        <div class="question">4.Are the courses self-paced or instructor-led?</div>
+        <div class="answer">Our courses offer both self-paced and instructor-led options. You can choose the learning style that suits you best.
+        Self-paced courses allow you to learn at your own pace, while instructor-led courses have scheduled lessons and
+        assignments.
+        </div>
+    </div>
+    <div class="faq">
+        <div class="question">5.What is the duration of each course?</div>
+        <div class="answer">The duration of each course varies depending on the content and complexity. Courses can range from a few hours to
+        several weeks or months. The duration is typically mentioned on the course description page.
+        </div>
+    </div>
+    <div class="faq">
+        <div class="question">6.What are the system requirements to access the courses?</div>
+        <div class="answer">To access the courses, you will need a computer or mobile device with a stable internet connection. Specific software or
+        hardware requirements, if any, will be mentioned on the course page.
+        </div>
+    </div>
+    <div class="faq">
+        <div class="question">7.How can I pay for the courses?</div>
+        <div class="answer">We offer various payment methods, including credit/debit cards, PayPal, and other online payment platforms. Simply
+        choose your preferred payment option during the enrollment process and follow the instructions to complete the payment.
+        </div>
+    </div>
+    <div class="faq">
+        <div class="question">8.Is there any financial assistance or scholarship program available?</div>
+        <div class="answer">We understand the importance of making education accessible. We offer financial assistance or scholarship programs for
+        eligible individuals. Details about these programs can be found on our website or by contacting our support team.
+        </div>
+    </div>
+    </div>
+<div id="gif"><img src="FAQ.gif" alt="faq"></div>
+    </div>
+
+    <script>
+        // JavaScript to toggle answer visibility
+        const questions = document.querySelectorAll('.question');
+
+        questions.forEach((question) => {
+            question.addEventListener('click', () => {
+                question.nextElementSibling.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>

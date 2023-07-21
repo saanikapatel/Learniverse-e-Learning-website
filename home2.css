@@ -262,7 +262,7 @@ padding-left: 70px;}
  #professionals {
      display: flex;
      flex-direction: row;
-     gap: 50px;
+     gap: 40px;
      padding: 50px;
      padding-top: 20px;
      justify-content: center;
@@ -370,3 +370,16 @@ padding-left: 70px;}
          transform: translateY(0);
      }
  }
+
+ #stdnt{
+    display: flex;
+    flex-direction:row;
+    gap: 360px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+ #stdnt img{
+    width:200px;
+ }
+ 

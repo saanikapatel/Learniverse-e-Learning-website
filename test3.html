@@ -1,39 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login| Learniverse</title>
     <style>
-        div{
-            display: flex;
-            background-color: aqua;
-            width: 50%;
-            opacity: 1;
-  transform: skewX(0);
-  transition: transform 0.3s ease;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F8EFE5;
+            margin: 0;
+            padding: 0;
         }
-        
-        /* div:hover {
-  transform: scale(1.2) rotate(20deg);
-  transition: transform 0.3s ease;
-} */
-/* div:hover {
-  transform: translateX(100px);
-} */
-div:hover {
-    transform: skewX(-20deg);
-}
 
-div:hover {
-  opacity: 0.8;
-}
+        .container {
+            max-width: 400px;
+            margin: 100px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: rgb(36, 48, 114);
+            color: #f4f7f9;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+
+        }
+
+        .social-login {
+            margin-bottom: 20px;
+        }
+
+        .social-login button {
+            background-color: #fff;
+            color: #0a0a0a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .social-login button img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .forgot-password a {
+            color: #080707;
+            text-decoration: none;
+        }
+
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .signup-link a {
+            color: rgb(36, 48, 114);
+            text-decoration: none;
+        }
     </style>
 </head>
+
 <body>
-    <Div>
-        my name is amisha jha. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ratione tempore est, veritatis quia blanditiis quisquam accusamus numquam provident iusto expedita, exercitationem ab sapiente! Ut rerum, corrupti facilis nemo ab impedit provident veritatis odit sequi eveniet soluta aperiam adipisci perferendis, harum quia praesentium recusandae? Neque dolores consequatur dolore! Tempore, odio.
-    </Div>
+    <header>
+    
+    </header>
+    <div class="container">
+        <h2><span style="color: rgb(36, 48, 114);">Student</span> <span style="color: rgb(241, 157, 29);">Login</span></h2>
+        <form onsubmit="return validateForm()">
+            <div class="social-login">
+                <button>
+                    <img src="icons8-google.svg" alt="Google Icon">
+                    <b>Continue with Google</b>
+                </button>
+                <button>
+                    <img src="icons8-facebook.svg" alt="Facebook Icon">
+                    <b>Continue with Facebook</b>
+                </button>
+                <button>
+                    <img src="icons8-apple-logo.svg" alt="Apple Icon">
+                    <b>Continue with Apple</b>
+                </button>
+            </div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Enter your email" required>
+            <div class="error-message" id="error-email" style="color: red;"></div>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <div class="error-message" id="error-password" style="color: red;"></div>
+    
+            <button type="submit">Login</button>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="signup-link">
+                <p>Don't have an account? <a href="signup.html">Signup here</a></p>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        function validateForm() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const errorEmailElement = document.getElementById('error-email');
+            const errorPasswordElement = document.getElementById('error-password');
+
+            // Reset error messages
+            errorEmailElement.innerHTML = '';
+            errorPasswordElement.innerHTML = '';
+
+            // Basic email validation
+            if (!validateEmail(email)) {
+                errorEmailElement.innerHTML = 'Please enter a valid email address.';
+                return false;
+            }
+
+            // Basic password validation
+            if (password.length < 6) {
+                errorPasswordElement.innerHTML = 'Password must be at least 6 characters long.';
+                return false;
+            }
+
+            return true;
+        }
+
+        function validateEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
 </body>
+
 </html>

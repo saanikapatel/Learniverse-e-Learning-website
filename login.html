@@ -2,11 +2,11 @@
 <html>
 
 <head>
-    <title>Login/Signup| Learniverse</title>
+    <title>Login| Learniverse</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
+            background-color: #F8EFE5;
             margin: 0;
             padding: 0;
         }
@@ -14,7 +14,7 @@
         .container {
             max-width: 400px;
             margin: 100px auto;
-            background-color: #fff;
+            background-color: white;
             padding: 30px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -23,6 +23,7 @@
         h2 {
             text-align: center;
             margin-bottom: 30px;
+            font-size: 30px;
         }
 
         label {
@@ -41,13 +42,15 @@
         }
 
         button {
-            background-color: #4181b5;
+            background-color: rgb(36, 48, 114);
             color: #f4f7f9;
             padding: 10px 20px;
             border: none;
-            border-radius: 5px;
+            border-radius: 15px;
             cursor: pointer;
             width: 100%;
+            font-size: 18px;
+
         }
 
         .social-login {
@@ -89,8 +92,8 @@
         }
 
         .signup-link a {
-            color: #4181b5;
-            text-decoration: none;
+            color: rgb(36, 48, 114);
+            
         }
     </style>
 </head>
@@ -100,12 +103,13 @@
 
     </header>
     <div class="container">
-        <h2>Student Login</h2>
-        <form>
+        <h2><span style="color: rgb(36, 48, 114);">Student</span> <span style="color: rgb(241, 157, 29);">Login</span>
+        </h2>
+        <form onsubmit="return validateForm()">
             <div class="social-login">
                 <button>
                     <img src="icons8-google.svg" alt="Google Icon">
-                   <b>Continue with Google</b> 
+                    <b>Continue with Google</b>
                 </button>
                 <button>
                     <img src="icons8-facebook.svg" alt="Facebook Icon">
@@ -118,17 +122,52 @@
             </div>
             <label for="email">Email:</label>
             <input type="text" id="email" placeholder="Enter your email" required>
+            <div class="error-message" id="error-email" style="color: red;"></div>
+
             <label for="password">Password:</label>
             <input type="password" id="password" placeholder="Enter your password" required>
+            <div class="error-message" id="error-password" style="color: red;"></div>
+
             <button type="submit">Login</button>
             <div class="forgot-password">
                 <a href="#">Forgot password?</a>
             </div>
             <div class="signup-link">
-                <p>Don't have an account? <a href="#">Sign up here</a></p>
+                <p>Don't have an account? <a href="signup.html">Signup here</a></p>
             </div>
         </form>
     </div>
+
+    <script>
+        function validateForm() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const errorEmailElement = document.getElementById('error-email');
+            const errorPasswordElement = document.getElementById('error-password');
+
+           
+            errorEmailElement.innerHTML = '';
+            errorPasswordElement.innerHTML = '';
+
+           if (!validateEmail(email)) {
+                errorEmailElement.innerHTML = '*Please enter a valid email address.';
+                return false;
+            }
+
+           
+            if (password.length < 6) {
+                errorPasswordElement.innerHTML = '*Password must be at least 6 characters long.';
+                return false;
+            }
+
+            return true;
+        }
+
+        function validateEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
 </body>
 
 </html>

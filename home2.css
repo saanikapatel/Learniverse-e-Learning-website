@@ -1,11 +1,14 @@
  *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
  }
  
  body {
      background-color: white;
      flex-wrap: wrap;
  }
+
+ 
 
  
 
@@ -127,7 +130,7 @@
  }
 
  #digimark {
-     background-color: #F8EFE5;
+     background-color:#F8EFE5;
      position: relative;
      transition: background-color 0.3s, opacity 0.3s;
 
@@ -135,7 +138,7 @@
 
  #digimark:hover {
      animation: bounce 0.5s;
-     background-color: #f3dbc0;
+     background-color:#f3dbc0;
      opacity: 0.8;
 
  }
@@ -148,7 +151,7 @@
  }
 
  #UI {
-     background-color: #F8EFE5;
+     background-color:#F8EFE5;
      position: relative;
      transition: background-color 0.3s, opacity 0.3s;
 
@@ -169,7 +172,7 @@
  }
 
  #front {
-     background-color: #F8EFE5;
+     background-color:#F8EFE5;
      position: relative;
      transition: background-color 0.3s, opacity 0.3s;
  }
@@ -202,19 +205,27 @@
 
  #big {
     display: flex;
-    gap: 300px;
+    gap: 100px;
     background-color: #F8EFE5;
      width: 80%;
      border-radius: 30px;
      align-self: center;
      margin-left: 150px;
-     height: 250px;}
+     height: 350px;
+    transition: transform 0.3s ease;
+    }
+    
+    #big:hover {
+    
+        transform: scale(1.1);
+    }
 
 
  #one{
     position: relative;
     text-align: center;
     top: 50px;
+   
  }
  #two {
     position: relative;
@@ -225,15 +236,25 @@
 position: relative;
     text-align: center;
     top: 50px;
+   
+ }
+ #four{
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    width: 260px;
+    color:rgb(68, 68, 72) ;
  }
 
  .centered {
      position: absolute;
-     top: 25%;
+     top: 22%;
      left: 50%;
      transform: translate(-50%, -50%);
      font-size: 50px;
      font-family: Arial, Helvetica, sans-serif;
+    height: 100px;
  }
 
  #page2{
@@ -306,6 +327,8 @@ padding-left: 70px;}
  .teachers {
      width: 150px;
      height: 150px;
+     border-radius: 25px;
+    margin-left: 25px;
  }
 
  .teach {
@@ -313,6 +336,7 @@ padding-left: 70px;}
      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
      width: 200px;
      height: 200px;
+     border-radius: 25px;
      transform: scale(1);
      transition: transform 0.3s ease;
 
@@ -451,4 +475,58 @@ transform: translateX(20px);
  }
 
 
+ #main{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+ }
+
+#left{
+    width:500px;
+}
+
+ #right{
+   width:280px;
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+ }
+ #right-right{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+ }
+ #b2,#b3,#b4{
+   width: 480px;
+   padding-top:8px;
+ }
+
+ 
+ #right img{
+    width: 250px;
+    height: 150px;
+    border-radius: 25px;
+    
+ }
+
+ 
+ .button1{
+    border-radius: 18px;
+    margin-left:90px;
+    margin-bottom: 20px;
+    background-color: rgb(241, 157, 29);
+    border-color: rgb(241, 157, 29);
+    color: white;
+    height: 32px;
+    text-align: center;
+    padding: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .button1:hover {
+      transform: scale(1.1);
+      
+  }
+  
  

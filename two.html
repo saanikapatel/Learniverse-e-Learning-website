@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="html" href="New folder/web_wizards/home2.html"> -->
+    <link rel="stylesheet" href="New folder/web_wizards/home2.css">
+    <title>UI/UX Design | Learniverse</title>
+    <style>
+
+    *{
+        box-sizing: border-box;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: rgb(36, 48, 114);
+    }
+     #logo{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    border-radius: 50%;
+}
+
+ .navbar {
+     background-color:white;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     display: flex;
+     z-index: 1000;
+ }
+
+ .navbar a {
+    font-size: 22px;
+     text-decoration: none;
+     padding: 30px 45px;
+     transition: background-color 0.3s ease;
+ }
+
+ .navbar a:hover {
+     background-color: rgb(241, 157, 29);
+ }
+
+
+
+ .footer {
+     background-color: white;
+     color:rgb(36, 48, 114);
+     padding: 20px;
+     text-align: center;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     animation: footerSlide 0.5s ease;
+ }
+
+ .footer-content {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .footer-logo {
+     font-size: 24px;
+     font-weight: bold;
+ }
+
+ .footer-links a {
+     color:rgb(36, 48, 114);
+     text-decoration: none;
+     margin: 0 10px;
+     transition: color 0.3s ease;
+     padding-right: 30px;
+ }
+
+ .footer-links a:hover {
+     color:rgb(241, 157, 29);
+ }
+
+ /* Keyframes for footer slide animation */
+ @keyframes footerSlide {
+     from {
+         transform: translateY(100%);
+     }
+
+     to {
+         transform: translateY(0);
+     }
+ }
+    .webdev{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(36, 48, 114);
+        width: max-content;
+        height: max-content;
+        padding: 10px;
+        border-radius: 5px;
+        float: left;
+        margin: 0px;
+        /* color: white; */
+    }
+
+    .webdev a{
+        padding: 30px 35px;
+        font-size: 22px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .webdev a:hover{
+        background-color: rgb(241, 157, 29);
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr auto;
+    }
+
+    .webdev{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+
+
+     /* .intro h1{
+        padding: 0px 0px 30px 0px;
+        font-size: 20px;
+        margin: 0px;
+        
+        height: 300px;
+        width: 800px;
+        text-align: center;
+        background-image: url("webdev.webp"); 
+        background-repeat: no-repeat;
+        object-fit: fill; 
+        grid-column-start: 2;
+        grid-column-end: 3;
+        float: left;
+        
+    }  */
+
+    .intro video{
+        /* padding-left: 150px; */
+        /* border: 1px solid red; */
+        margin-left: 0px;
+        padding: 0px;
+        margin-right: 0px;
+
+
+    }
+
+    .line{
+        /* position: absolute; */
+        /* top: 40%;
+        left: 50%;
+        right: 25%;
+        bottom: 10%;
+        transform: translate(-50%, -50%); */
+        font-size: 60px;
+        text-align: center;
+        float: left;
+        /* border: 1px solid black; */
+        margin-left: 90px ;
+        margin-top: 120px;
+    }
+
+    .main{
+        /* text-align: center; */
+        font-size: 26px;
+        padding: 90px;
+        padding-top: 30px;
+    }
+
+    .side{
+        /* text-align: center; */
+        font-size: 26px;
+        padding: 90px;
+        padding-top: 30px;
+    }
+
+    .course-container{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0px;
+    }
+
+    .side-container{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0px;
+    }
+
+    .course-item{
+        /* border: 1px solid black; */
+        height: 600px;
+        padding: 20px;
+        margin: 13px 13px 0px 13px;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .side-item{
+        /* border: 1px solid black; */
+        display: flex;
+        width: 400px;
+        height: 160px;
+        /* padding: 25px; */
+        /* padding-left: 50px; */
+        margin: 13px 13px 0px 13px;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+
+
+    #pinphoto{
+        float: left;
+        padding: 30px 30px 10px 10px;
+        /* background-color: antiquewhite; */
+    }
+
+    .course-item h4{
+        /* float: inline-end; */
+        /* padding: 50px; */
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+/* 
+    .course-item p{
+        font-size: 15px;
+        padding: 15px;
+
+    } */
+
+    .course-item ul{
+        font-size: 15px;
+        float: left;
+        line-height: 1.6;
+
+    }
+
+    .course-item p{
+        /* float: right; */
+        
+        text-decoration: none;
+       
+        font-weight: bolder;
+        margin-top: 10px;
+        margin-left: 90px;
+        font-size: 40px;
+
+    }
+
+    .side-item img{
+        float: left;
+        /* border: 1px solid red; */
+        margin-right: 10px;
+    }
+
+    .inc{
+        font-size: 20px;
+        font-weight: 200;
+        /* border: 1px solid black; */
+        margin-top: 5px;
+    }
+
+    #cont{
+        font-size: 20px;
+        padding: 10px 50px;
+        margin-left: 0px;
+        margin-top: 30px;
+        text-decoration: none;
+        border: 2px solid rgb(241, 157, 29);
+        border-radius: 10px;
+        color: rgb(241, 157, 29);
+
+    }
+
+    .course-item a:hover{
+        background-color: rgb(216, 198, 173);
+        
+    }
+
+    .benefits{
+    padding-top: 30px;
+    text-align: center; 
+    font-size: 19px;
+    font-weight: 500; 
+    
+    }
+
+    .notsure{
+        margin-top: 15px;
+        padding-top: 3px;
+        font-size: 15px;
+        font-weight: 800;
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+    }
+
+    .info-notsure{
+        /* border-radius: 5px; */
+        padding-bottom: 20px;
+        margin-left: 101px;
+        margin-right: 101px;
+        border: 2px solid rgb(206, 204, 204);
+       
+    }
+
+    .info-notsure img{
+        float: left;
+        margin-bottom: 10px;
+        margin-right: 4px;
+        margin-top: 3px;
+    }
+    
+
+    </style>
+    
+</head>
+<body>
+
+<nav class="navbar" id="navbar" style="flex-wrap: wrap;">
+    <a><img src="logo1.jpg" alt="logo" id="logo"></a>
+    <a href="home2.html" style="color: rgb(36, 48, 114);">Home</a>
+    <a href="home2.html" style="color:rgb(36, 48, 114) ;">Course Flow</a>
+    <a href="home2.html" style="color:rgb(36, 48, 114)">Courses</a>
+    <a href="home2.html" style="color:rgb(36, 48, 114)">Our Experts</a>
+    <a href="home2.html" style="color:rgb(36, 48, 114)">Magazine</a>
+    <a href="home2.html" style="color: rgb(36, 48, 114);">Partners</a>
+</nav>
+<br><br><br><br><br>
+
+
+
+    <div class="intro">
+        
+        <h1 class="line">UI/UX<br>DESIGN<br><p style="font-size: 20px; color: rgb(241, 157, 29);">Become a designer in 2023!<br>Master Mobile Design, User Interface + User Experience</p> </h1>
+        <video width="780px" height="450px" autoplay loop>
+            <source src="wdc7.mp4" type="video/mp4">
+          </video>
+    </div>
+</div>
+
+<div class="main">
+    <h3 style="text-align: center;">Choose the <span style="color: rgb(241, 157, 29);">Right plan</span></h3>
+    <div class="course-container">
+    <div class="course-item">
+        <!-- <img src="wdc1.webp" height="130px" width="200px" id="pinphoto"> -->
+        <h4>Light</h4>
+        <p>Rs. 1,899 <br><br>
+        <a href="payment.html" id="cont">Continue</a></p>                                     
+        <!-- <img src="rate4.7.png" height="40px" width="115px"><br> -->
+        
+        <div class="benefits">This course will provide you with:</div>
+        <!-- <span style="font-size: 17px; font-weight: bold;">&nbsp;&nbsp;What you'll learn</span> -->
+
+        <ul>
+            <li>Full access to all course materials.</li>
+            <li>Access to course discussion forums.</li>
+            <li>Self paced learning with no time restrictions.</li>
+
+        </ul>
+        
+    
+    </div>
+    <br>
+    <div class="course-item">
+        <!-- <img src="wdc2.webp" height="130px" width="200px"> -->
+        <h4>Basic</h4>
+        <p>Rs. 2,899<br><br>
+        <a href="payment.html" id="cont">Continue</a></p> 
+        <div class="benefits">This course will provide you with:</div>
+        <ul>
+            <li>Full access to all course materials.</li>
+            <li>Access to course discussion forums.</li>
+            <li>Self paced learning with no time restrictions.</li>
+            <li>Downloadable material for offline access.</li>
+            <li>Customer support with faster response time.</li>
+           
+        </ul>
+        
+    </div>
+    <br>
+    <div class="course-item">
+        <!-- <img src="wdc3.webp" height="130px" width="200px"> -->
+        <h4>Unlimited</h4>
+        <p>Rs. 3,199<br><br>
+        <a href="payment.html" id="cont">Continue</a></p> 
+        <div class="benefits">This course will provide you with:</div>
+        <ul>
+            <li>Full access to all course materials.</li>
+            <li>Access to course discussion forums.</li>
+            <li>Self paced learning with no time restrictions.</li>
+            <li>Downloadable material for offline access.</li>
+            <li>Customer support with faster response time.</li>
+            <li>Email support for general inquiries.</li>
+            <li>One-on-one coaching sessions with tutors.</li>
+
+
+        </ul>
+        
+    </div>
+    <br>
+    
+</div>
+</div>
+
+<div class="side">
+    <h3 style="text-align: center;">All <span style="color: rgb(241, 157, 29);">Plans</span> Include</h3>
+    <div class="side-container">
+    <div class="side-item">
+    
+        <img src="p1.png" height="50px" width="50px">
+        <div class="inc">Unlimited Conversation</div>
+    
+    </div>
+    
+    <div class="side-item">
+        <img src="p2.png" height="50px" width="50px">
+        <div class="inc">Unlimited Maximum Time</div>
+        
+    </div>
+    
+    <div class="side-item">
+        <img src="p3.png" height="50px" width="50px">
+        <div class="inc">Adfree pages</div>
+        
+        
+    </div>
+    
+    
+</div>
+</div>
+
+<div class="info-notsure">
+<img src="info.png" height="45px" width="45px"></img><div class="notsure">Not sure? All courses have a 30-day-money-back guarantee</div>
+</div>
+
+<br><br><br><br><br><br>
+
+<footer class="footer">
+    <div class="footer-content">
+     <div class="footer-logo">Learniverse</div>
+     <div class="footer-links">
+         <a href="#">About</a>
+         <a href="faq.html">FAQ</a>
+         <a href="contact.html">Contact Us</a>
+         <a href="privacy.html">Privacy Policy</a>
+         <a href="refund.html">Refund Policy</a>
+         
+     </div>
+ </div>
+</footer>
+
+</body>
+</html>

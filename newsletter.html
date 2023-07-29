@@ -12,10 +12,12 @@
             margin: 0;
             box-sizing: border-box;
         }
-         
+         *{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+         }
         
         .popup {
-            background-color:rgb(250, 229, 201);
+            background-color:rgb(228, 228, 250);
             width: 420px;
             height: 600px;
             padding: 30px 40px;
@@ -24,7 +26,7 @@
             left: 50%;
             top: 50%;
             border-radius: 25px;
-            
+             border: black 1px solid;
             text-align: center;
         }
 
@@ -51,16 +53,16 @@
         }
         input[type="email"]{
             border: none;
-            background-color: rgb(250, 229, 201);
+            background-color: rgb(228, 228, 250);
             width: 150px;
             height: 50px;
 
         }
         input[type="submit"]:hover {
-      background-color: rgb(250, 229, 201); 
+      background-color:rgb(228, 228, 250); 
     }
     input[type="email"]:focus {
-      background-color:rgb(250, 229, 201);
+      background-color:rgb(228, 228, 250);
       border: none;
     }
     #foot{
@@ -142,7 +144,7 @@
     <hr style="color: black; height: 2px ;">
 </div>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     window.addEventListener("load", function () {
         setTimeout(
             function open(event) {
@@ -158,6 +160,28 @@
         document.querySelector(".popup").style.display = "none";
         document.querySelector(".overlay").style.display = "none";
     });
+</script> -->
+
+<script type="text/javascript">
+    // Function to show the popup
+    function showPopup() {
+        document.querySelector(".overlay").style.display = "block";
+        document.querySelector(".popup").style.display = "block";
+    }
+
+    // Function to hide the popup
+    function hidePopup() {
+        document.querySelector(".overlay").style.display = "none";
+        document.querySelector(".popup").style.display = "none";
+    }
+
+    // Show the popup after a 2-second delay
+    window.addEventListener("load", function () {
+        setTimeout(showPopup, 2000);
+    });
+
+    // Close the popup when clicking the close button
+    document.querySelector("#close").addEventListener("click", hidePopup);
 </script>
 </body>
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Image Gallery</title>
+   <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.thumbnails img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.2);
+}
+
+.main-image {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#main-img {
+    max-width: 100%;
+    border: 2px solid #ddd;
+    transition: transform 0.5s ease;
+}
+
+   </style>
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="thumbnails">
+            <img src="blog1.jpg" alt="Image 1">
+            <img src="blog2.webp" alt="Image 2">
+            <img src="blog3.jpg" alt="Image 3">
+            <img src="blog4.jpg" alt="Image 3">
+            <img src="blog5.jpg" alt="Image 3">
+            
+        </div>
+        <div class="main-image">
+            <img src="blog1.jpg" alt="Image 1" id="main-img">
+        </div>
+    </div>
+
+    <script>
+    const thumbnails = document.querySelectorAll('.thumbnails img');
+    const mainImg = document.getElementById('main-img');
+
+    thumbnails.forEach((thumbnail) => {
+        thumbnail.addEventListener('click', () => {
+            mainImg.src = thumbnail.src;
+            thumbnails.forEach((thumb) => thumb.classList.remove('active'));
+            thumbnail.classList.add('active');
+        });
+    });
+
+    </script>
+</body>
+
+</html>

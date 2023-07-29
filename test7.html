@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Three.js Particle Animation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+    <div id="canvas-container"></div>
+    <img src="blog1.jpg" id="animated-image" style="display: none;">
+    <script>
+        // Create a scene
+        const scene = new THREE.Scene();
+
+        // Create a camera
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.z = 5;
+
+        // Create a renderer
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        // Create particles
+        const particleCount = 1000;
+        const particles = new THREE.Group();
+        const particleGeometry = new THREE.SphereGeometry(0.05);
+        const particleMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
+
+        for (let i = 0; i < particleCount; i++) {
+            const particle = new THREE.Mesh(particleGeometry, particleMaterial);
+            const x = (Math.random() - 0.5) * 10;
+            const y = (Math.random() - 0.5) * 10;
+            const z = (Math.random() - 0.5) * 10;
+            particle.position.set(x, y, z);
+            particles.add(particle);
+        }
+
+        scene.add(particles);
+
+        // Animate the particles
+        function animateParticles() {
+            requestAnimationFrame(animateParticles);
+
+            particles.rotation.x += 0.01;
+            particles.rotation.y += 0.01;
+
+            renderer.render(scene, camera);
+        }
+
+        animateParticles();
+    </script>
+</body>
+
+</html>

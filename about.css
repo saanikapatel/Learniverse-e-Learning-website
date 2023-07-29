@@ -1,0 +1,136 @@
+ *{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ 
+
+ #mentors img {
+     width: 600px;
+     margin: 30px;
+     margin-left: 80px;
+    transform: scale(1);
+        transition: transform 0.3s ease;
+ } 
+ #mentors img:hover{
+    transform: scale(1.1);
+ }
+
+
+ .quote{
+    display: flex;
+    flex-direction: row;
+    
+ }
+
+ #quote{
+color: rgb(36, 48, 114);
+    font-size: 40px;
+    text-align: center;
+    margin-top: 160px;
+ }
+
+ .ques {
+     text-align: center;
+    
+ }
+
+ #points {
+     display: flex;
+     flex-direction: row;
+     gap: 70px;
+     padding: 50px;
+     padding-top: 20px;
+     justify-content: center;
+     align-items: center;
+     
+     display: inline-flexbox;
+ }
+
+ .point {
+     padding: 50px;
+     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+     width: 180px;
+     height: 350px;
+     transform: scale(1);
+     transition: transform 0.3s ease;
+     text-align: center;
+     border-radius: 25px;
+ }
+ .point:hover{
+    transform: scale(1.1);
+ }
+
+ 
+.focus{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+
+}
+
+#focus{
+    margin-left: 80px;
+    width: 40%;
+    margin-top: 20px;
+}
+
+#focusimg img{
+    width: 600px;
+    margin-bottom: 15px;
+}
+
+
+
+ .about{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    
+ }
+ #about{
+    margin-top: 200px;
+    width: 35%;
+    margin-left: 80px;
+ }
+ #pic img{
+    margin-top: 20px;
+ }
+ 
+
+ 
+
+ .images {
+     width: 150px;
+     height: 150px;
+ }
+
+
+
+ .navbar {
+     background-color: white;
+     position: fixed;
+     top: 0;
+     width: 100%;
+     display: flex;
+     z-index: 1000;
+ }
+
+ .navbar a {
+     font-size: 22px;
+     text-decoration: none;
+     padding: 30px 45px;
+     transition: background-color 0.3s ease;
+ }
+
+ .navbar a:hover {
+     background-color: rgb(241, 157, 29);
+ }
+
+ #logo {
+     width: 70px;
+     height: 70px;
+     position: absolute;
+     left: 20px;
+     top: 15px;
+     border-radius: 50%;
+
+ }

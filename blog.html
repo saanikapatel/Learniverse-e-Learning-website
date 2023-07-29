@@ -3,145 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog| Learniverse</title>
-    <style>.popup {
-            background-color:rgb(250, 229, 201);
-            width: 420px;
-            height: 600px;
-            padding: 30px 40px;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            left: 50%;
-            top: 50%;
-            border-radius: 25px;
-            z-index: 1002;
-            text-align: center;
-        }
-
-        #newsletter {
-            display: flex;
-            justify-content: center;
-            
-        }
-        #newsletter img{
-            width: 420px;
-        }
-        #content{
-            display: flex;
-            flex-direction: row;
-            gap: 35px;
-            
-        }
-        #subscribe{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 25px;   
-        }
-        #updates{
-            font-size: 15px;
-        }
-        input[type="email"]{
-            border: none;
-            background-color: rgb(250, 229, 201);
-            width: 150px;
-            height: 50px;
-
-        }
-        input[type="submit"]:hover {
-      background-color: rgb(250, 229, 201); 
-    }
-    input[type="email"]:focus {
-      background-color:rgb(250, 229, 201);
-      border: none;
-    }
-    #foot{
-        display: flex;
-        justify-content: center;
-    }
-    a {
-            display: block;
-            width: 150px;
-            position: relative;
-            margin: 10px auto;
-            text-align: center;
-            background-color: hsl(212, 49%, 40%);
-            border-radius: 20px;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 8px 0;
-        }
+    <title>Magazine| Learniverse</title>
+    <link rel="stylesheet" href="blog.css">
     
-        
-        .popup button {
-            display: block;
-            margin: 0 0 20px auto;
-            background-color: transparent;
-            font-size: 30px;
-            color: #ffffff;
-            background: hsl(212, 49%, 40%);
-            border-radius: 100%;
-            width: 40px;
-            height: 40px;
-            border: none;
-            outline: none;
-            cursor: pointer;
-        }
-        .overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
-        z-index:1001; 
-      
-    }
-
-.navbar {
-     background-color:white;
-     position: fixed;
-     top: 0;
-     width: 100%;
-     display: flex;
-     justify-content: center;
-     z-index: 999;
- }
-
- .navbar a {
-     background-color:white;
-    font-size: 22px;
-     text-decoration: none;
-     padding: 30px 45px;
-     transition: background-color 0.3s ease;
-     
-
- }
-
- .navbar a:hover {
-     background-color: #555;
- }
-
- #logo{
-    width: 80px;
-    height: 50px;
-    position: absolute;
-    left: 20px;
-    top: 15px;}
-
    
 </style>
 </head>
 <body>
 
 
+
+
+<div class="overlay"></div>
+<div class="popup" style="display: none;">
+    <button id="close">&times;</button>
+    <div id="newsletter">
+        <img src="1.svg" alt="newsletter">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="content">
+        <div id="subscriber"><b>Subscribe to our <br>newsletter</b>
+        </div>
+        <div id="updates"><i>
+                Get weekly updates on the<br>latest educational news right in your mailbox.</i>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+    <div id="foot">
+        <input type="email" name="email" placeholder="Your Email">
+        <a href="#" id="subscribe">Subscribe</a>
+    </div>
+    <hr style="color: black; height: 2px ;">
+</div>
+
+
+
+
+
+
+
+
+
+
+
 <nav class="navbar" id="navbar" style="flex-wrap: wrap;">
-    <a><img src="logo2.jpg" alt="logo" id="logo"></a>
-    <a href="#page_1" style="color: rgb(241, 157, 29);">Home</a>
-    <a href="#page_2" style="color:rgb(36, 48, 114) ;">Course Flow</a>
-    <a href="#page_3" style="color:rgb(36, 48, 114)">Courses</a>
-    <a href="#page_4" style="color:rgb(36, 48, 114)">Our Experts</a>
-    <a href="#blogs" style="color:rgb(36, 48, 114)">Blogs</a>
-    <a href="#page_5" style="color: rgb(36, 48, 114);">Partners</a>
+    <a><img src="logo1.jpg" alt="logo" id="logo"></a>
+    <a href="home2.html" style="color: rgb(36, 48, 114);">Home</a>
+    <a href="#education" style="color:rgb(36, 48, 114) ;">Educational Content</a>
+    <a href="#study" style="color:rgb(36, 48, 114)">Study Tips</a>
+    <a href="#career" style="color:rgb(36, 48, 114)">Career Development</a>
+    <a href="#success" style="color:rgb(36, 48, 114)">Success Stories</a>
+    
 
 </nav>
 <br>
@@ -154,37 +80,643 @@
 
 
 
-    <div class="overlay"></div>
-    <div class="popup" style="display: none;">
-        <button id="close">&times;</button>
-        <div id="newsletter">
-            <img src="1.svg" alt="newsletter">
+
+
+<div id="education">
+
+
+    <h1 style="text-align: center;"><span style="color: rgb(36, 48, 114);">Embark on an</span><span style="color: rgb(241, 157, 29);"> extraordinary</span><span style="color: rgb(36, 48, 114);">
+    learning journey</span><br><span style="color: rgb(36, 48, 114);">with our educational </span><span style="color: rgb(241, 157, 29);">content blogs.</span><br>
+    <span style="color: rgb(154, 154, 170); font-size: 15px;">Here knowledge and innovation collide.</span>
+</h1>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+    <div id="first">
+        <div id="first-first">
+            <img src="blog5.webp" alt="blog5" class="image">
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id="content">
-            <div id="subscribe"><b>Subscribe to our <br>newsletter</b>
-            </div>
-            <div id="updates"><i>
-                    Get weekly updates on the<br>latest educational news right in your mailbox.</i>
-            </div>
-    
+        <div id="first-second">
+            <span><b>Education,Learning</b></span><span style="color: rgb(154, 154, 170);">-July 20,2023</span>
+            <br>
+            <br>
+            <span style="color:rgb(36, 48, 114); font-size: 30px; font-weight: bold;">Power of Lifelong Learning: How to Keep Growing and Improving</span>
+            <br>
+            <span style="color: rgb(154, 154, 170);">It's no secret that the world is ever-changing and evolving. It seems like everyday technology advances, the way we do
+            business changes, and what was trendy yesterday can..........</span><span ><a href="https://medium.com/@maxsermi/the-power-of-lifelong-learning-how-to-keep-growing-and-improving-e2550e0cd412" style="color:rgb(241, 157, 29) ;text-decoration: none;"><b>Read more</b></a></span>
+            <br>
+            <br>
+            <img src="writer2.jpeg" alt="writer" style="width: 40px;height: 35px; border-radius: 50%;">
+            <span style="position: absolute;margin-left: 8px;margin-top: 8px;"><b>Sergey Campbill</b></span>
+
+
+
         </div>
-        <br>
-        <br>
-        <br>
-    
-    
-        <div id="foot">
-            <input type="email" name="email" placeholder="Your Email">
-            <a href="#">Subscribe</a>
-        </div>
-        <hr style="color: black; height: 2px ;">
     </div>
+
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <div id="second">
+        <div class="second-first">
+            <div class="second-first-first">
+                <img src="blog14.jpg" alt="blog14" class="image">
+                <br>
+                <br>
+                <span>
+                    <b>Education,Learning</b></span><span style="color: rgb(154, 154, 170);">-July 20,2023
+                </span>
+                <br>
+                <br>
+                <span style="font-size: 20px;color: rgb(36, 48, 114); font-weight: bold;">The Benefits of Critical Thinking & How to develop it</span>
+                <br>
+                <span style="color:rgb(154, 154, 170) ;">
+                    Before we proceed to understand the importance and benefits of..........<a href="https://tscfm.org/blogs/the-benefits-of-critical-thinking-for-students/" style="text-decoration: none;color:rgb(241, 157, 29) ;"><b>Read More</b></a>
+                </span>
+                <br>
+                <br>
+                <img src="writer2.jpeg" alt="writer" style="width: 40px;height: 35px; border-radius: 50%;">
+                <span style="position: absolute;margin-left: 8px;margin-top: 8px;"><b>Sergey Campbill</b></span>
+            </div>
+
+        </div>
+
+
+
+
+
+        
+            <div class="second-first">
+                <div class="second-first-first">
+                    <img src="blog15.jpg" alt="blog15" class="image">
+                    <br>
+                    <br>
+                    <span>
+                        <b>Education,Learning</b></span><span style="color: rgb(154, 154, 170);">-July 20,2023
+                    </span>
+                    <br>
+                    <br>
+                    <span style="font-size: 20px;color: rgb(36, 48, 114); font-weight: bold;">Understanding Emotional Intelligence in the Classroom</span>
+                    <br>
+                    <span style="color:rgb(154, 154, 170) ;">
+                        Emotional intelligence has been, for some time now, a buzzword..........<a href="https://www.ecolemondiale.org/bulletins-board/the-benefit-of-emotional-intelligence-for-students"
+                            style="text-decoration: none;color:rgb(241, 157, 29) ;"><b>Read More</b></a>
+                    </span>
+                    <br>
+                    <br>
+                    <img src="writer2.jpeg" alt="writer" style="width: 40px;height: 35px; border-radius: 50%;">
+                    <span style="position: absolute;margin-left: 8px;margin-top: 8px;"><b>Sergey Campbill</b></span>
+                </div>
+        
+            </div>
+        
+
+
+
+            
+                <div class="second-first">
+                    <div class="second-first-first">
+                        <img src="blog16.webp" alt="blog16" class="image">
+                        <br>
+                        <br>
+                        <span>
+                            <b>Education,Learning</b></span><span style="color: rgb(154, 154, 170);">-July 20,2023
+                        </span>
+                        <br>
+                        <br>
+                        <span style="font-size: 20px;color: rgb(36, 48, 114); font-weight: bold;">The Role of Technology in Modern Education(2023)</span>
+                       <br>
+                        <span style="color:rgb(154, 154, 170) ;">
+                        In today's rapidly changing world, technology has become an..........<a href="https://npsvrp.com/the-role-of-technology-in-modern-education/#:~:text=In%20today's%20rapidly%20changing%20world,for%20both%20students%20and%20teachers."
+                                style="text-decoration: none;color:rgb(241, 157, 29) ;"><b>Read More</b></a>
+                        </span>
+                        <br>
+                        <br>
+                        <img src="writer2.jpeg" alt="writer" style="width: 40px;height: 35px; border-radius: 50%;">
+                        <span style="position: absolute;margin-left: 8px;margin-top: 8px;"><b>Sergey Campbill</b></span>
+                    </div>
+            
+                </div>
+            
+
+
+
+
+
+
+
+    </div>
+
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="study">
+
+
+    <h1 style="text-align: center;"><span style="color: rgb(36, 48, 114);">Unlock a world of</span><span
+            style="color: rgb(241, 157, 29);"> innovative and cool</span><span style="color: rgb(36, 48, 114);">
+            study tips</span><br><span style="color: rgb(36, 48, 114);">to level up your learning </span><span
+            style="color: rgb(241, 157, 29);">experience!</span><br>
+        <span style="color: rgb(154, 154, 170); font-size: 15px;">Let's dive in!!!</span>
+    </h1>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+
+
+    <div id="first">
+        <div id="first-first">
+            <img src="blog10.png" alt="blog10" class="image">
+        </div>
+        <div id="first-second">
+            <span><b>Tips,Guidance</b></span><span style="color: rgb(154, 154, 170);">-July 27,2023</span>
+            <br>
+            <br>
+            <span style="color:rgb(36, 48, 114); font-size: 30px; font-weight: bold;">7 tips to help you cope with exam stress</span>
+            <br>
+            <span style="color: rgb(154, 154, 170);">A little stress can be a good thing: it can be the motivational push that we need to get things done.However, sometimes, dealing with stress (especially during exam season) ..........</span><span><a
+                    href="https://medium.com/@maxsermi/the-power-of-lifelong-learning-how-to-keep-growing-and-improving-e2550e0cd412" style="color:rgb(241, 157, 29) ; text-decoration: none;"><b>Read
+                        more</b></a></span>
+            <br>
+            <br>
+            <img src="writer3.jpeg" alt="writer" style="width: 40px;height: 35px; border-radius: 50%;">
+            <span style="position: absolute;margin-left: 8px;margin-top: 8px;"><b> Lisa Johanson</b></span>
+
+
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <div id="second">
+        <div class="second-first">
+            <div class="second-first-first">
+                <img src="blog11.webp" alt="blog11" class="image">
+                <br>
+                <br>
+                <span>
+                    <b>Tips,Guidance</b></span><span style="color: rgb(154, 154, 170);">-July 28,2023
+                </span>
+                <br>
+                <br>
+                <span style="font-size: 20px;color: rgb(36, 48, 114); font-weight: bold;">The Benefits of Group Study: How to Make It Effective</span>
+                <br>
+                <span style="color:rgb(154, 154, 170) ;">
+                Group study provides a supportive and collaborative learning ..........<a href="https://amberstudent.com/blog/post/top-10-benefits-of-group-study"
+                        style="text-decoration: none;color:rgb(241, 157, 29) ;"><b>Read More</b></a>
+                </span>
+                <br>
+                <br>
+                <img src="writer3.jpeg" alt="writer" style="width: 40px;height: 35px; border-radius: 50%;">
+                <span style="position: absolute;margin-left: 8px;margin-top: 8px;"><b>Lisa Johanson</b></span>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="second-first">
+            <div class="second-first-first">
+                <img src="blog12.webp" alt="blog12" class="image">
+                <br>
+                <br>
+                <span>
+                    <b>Tips,Guidance</b></span><span style="color: rgb(154, 154, 170);">-July 28,2023
+                </span>
+                <br>
+                <br>
+                <span style="font-size: 20px;color: rgb(36, 48, 114); font-weight: bold;">Breaks for breakthroughs: The importance of taking breaks</span>
+                <br>
+                <span style="color:rgb(154, 154, 170) ;">
+                    Have you taken a break today? Anything counts, even if it was...........<a href="https://www.betterup.com/blog/the-importance-of-taking-breaks"
+                        style="text-decoration: none;color:rgb(241, 157, 29) ;"><b>Read More</b></a>
+                </span>
+                <br>
+                <br>
+                <img src="writer3.jpeg" alt="writer" style="width: 40px;height: 35px; border-radius: 50%;">
+                <span style="position: absolute;margin-left: 8px;margin-top: 8px;"><b>Lisa Johanson</b></span>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="second-first">
+            <div class="second-first-first">
+                <img src="blog13.jpg" alt="blog13" class="image">
+                <br>
+                <br>
+                <span>
+                    <b>Tips,Guidance</b></span><span style="color: rgb(154, 154, 170);">-July 28,2023
+                </span>
+                <br>
+                <br>
+                <span style="font-size: 20px;color: rgb(36, 48, 114); font-weight: bold;">How to make an effective study plan that actually works</span>
+                <br>
+                <span style="color:rgb(154, 154, 170) ;">
+                A study schedule is a time-management plan that will help you achieve..........<a href="https://www.vu.edu.au/about-vu/news-events/study-space/how-to-make-an-effective-study-plan"
+                        style="text-decoration: none;color:rgb(241, 157, 29) ;"><b>Read More</b></a>
+                </span>
+                <br>
+                <br>
+                <img src="writer3.jpeg" alt="writer" style="width: 40px;height: 35px; border-radius: 50%;">
+                <span style="position: absolute;margin-left: 8px;margin-top: 8px;"><b>Lisa Johanson</b></span>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+<div id="career">
+
+
+    <h1 style="text-align: center;"><span style="color: rgb(36, 48, 114);">Explore our </span><span
+            style="color: rgb(241, 157, 29);">career development</span><span style="color: rgb(36, 48, 114);">
+            blogs, packed with </span><br><span style="color: rgb(36, 48, 114);">cool insights to take you to</span><span
+            style="color: rgb(241, 157, 29);"> new heights.</span><br>
+        <span style="color: rgb(154, 154, 170); font-size: 15px;">These blogs are your roadmap to a brighter, more rewarding future.</span>
+    </h1>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+
+
+    <div id="first">
+        <div id="first-first">
+            <img src="blog17.jpg" alt="blog17" class="image">
+        </div>
+        <div id="first-second">
+            <span><b>Career,Growth</b></span><span style="color: rgb(154, 154, 170);">-July 30,2023</span>
+            <br>
+            <br>
+            <span style="color:rgb(36, 48, 114); font-size: 30px; font-weight: bold;">How To Build Your Personal Brand To Boost Your Career</span>
+            <br>
+            <span style="color: rgb(154, 154, 170);">What is a personal brand? In this guide, we'll discuss how personal branding boosts your career & share 7 personal brand building tips to create yours now..........</span><span><a
+                    href="https://weworkremotely.com/how-to-build-your-personal-brand-to-boost-your-career#:~:text=Build%20Up%20Your%20Network%20and%20Online%20Community&text=Leverage%20what%20makes%20you%20special,as%20if%20they%20know%20you."
+                    style="color:rgb(241, 157, 29) ; text-decoration: none;"><b>Read
+                        more</b></a></span>
+            <br>
+            <br>
+            <img src="writer4.jpeg" alt="writer" style="width: 40px;height: 35px; border-radius: 50%;">
+            <span style="position: absolute;margin-left: 8px;margin-top: 8px;"><b>Charlotte Olivia</b></span>
+
+
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <div id="second">
+        <div class="second-first">
+            <div class="second-first-first">
+                <img src="blog18.jpeg" alt="blog18" class="image">
+                <br>
+                <br>
+                <span>
+                    <b>Career,Growth</b></span><span style="color: rgb(154, 154, 170);">-July 30,2023
+                </span>
+                <br>
+                <br>
+                <span style="font-size: 20px;color: rgb(36, 48, 114); font-weight: bold;">Overcoming Imposter Syndrome: Owning Your Success</span>
+                <br>
+                <span style="color:rgb(154, 154, 170) ;">
+                    Imposter Syndrome is a common phenomenon where..........<a
+                        href="https://www.linkedin.com/pulse/overcoming-imposter-syndrome-owning-your-success-summit-jha#:~:text=By%20recognizing%20and%20acknowledging%20its,own%20our%20successes%20with%20confidence."
+                        style="text-decoration: none;color:rgb(241, 157, 29) ;"><b>Read More</b></a>
+                </span>
+                <br>
+                <br>
+                <img src="writer4.jpeg" alt="writer" style="width: 40px;height: 35px; border-radius: 50%;">
+                <span style="position: absolute;margin-left: 8px;margin-top: 8px;"><b>Charlotte Olivia</b></span>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="second-first">
+            <div class="second-first-first">
+                <img src="blog19.webp" alt="blog19" class="image">
+                <br>
+                <br>
+                <span>
+                    <b>Career,Growth</b></span><span style="color: rgb(154, 154, 170);">-July 30,2023
+                </span>
+                <br>
+                <br>
+                <span style="font-size: 20px;color: rgb(36, 48, 114); font-weight: bold;">The power of networking for your career: Building connections</span>
+                <br>
+                <span style="color:rgb(154, 154, 170) ;">
+                    In this digital age and increased connectivity, it is quintessential...........<a
+                        href="https://www.thedailystar.net/life-living/news/the-power-networking-your-career-building-professional-connections-3356086"
+                        style="text-decoration: none;color:rgb(241, 157, 29) ;"><b>Read More</b></a>
+                </span>
+                <br>
+                <br>
+                <img src="writer4.jpeg" alt="writer" style="width: 40px;height: 35px; border-radius: 50%;">
+                <span style="position: absolute;margin-left: 8px;margin-top: 8px;"><b>Charlotte Olivia</b></span>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="second-first">
+            <div class="second-first-first">
+                <img src="blog20.webp" alt="blog20" class="image">
+                <br>
+                <br>
+                <span>
+                    <b>Career,Growth</b></span><span style="color: rgb(154, 154, 170);">-July 30,2023
+                </span>
+                <br>
+                <br>
+                <span style="font-size: 20px;color: rgb(36, 48, 114); font-weight: bold;">Embracing Change: A Guide to Rocking Career Transition</span>
+                <br>
+                <span style="color:rgb(154, 154, 170) ;">
+                    Are you facing redundancy and seeking a career transition? Do you..........<a
+                        href="https://medium.com/@catalystzlearning/embracing-change-a-guide-to-rocking-career-transition-baea2d8e8a2f"
+                        style="text-decoration: none;color:rgb(241, 157, 29) ;"><b>Read More</b></a>
+                </span>
+                <br>
+                <br>
+                <img src="writer4.jpeg" alt="writer" style="width: 40px;height: 35px; border-radius: 50%;">
+                <span style="position: absolute;margin-left: 8px;margin-top: 8px;"><b>Charlotte Olivia</b></span>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+<div id="success">
+
+
+    <h1 style="text-align: center;"><span style="color: rgb(36, 48, 114);">Embark on a journey of </span><span
+            style="color: rgb(241, 157, 29);">inspiration</span><span style="color: rgb(36, 48, 114);">
+            and triumph </span><br><span style="color: rgb(36, 48, 114);">with our captivating success </span><span style="color: rgb(241, 157, 29);">stories blogs.</span><br>
+        <span style="color: rgb(154, 154, 170); font-size: 15px;">Get ready to be inspired and uplifted!!!</span>
+    </h1>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+
+
+    <div id="first">
+        <div id="first-first">
+            <img src="blog21.png" alt="blog21" class="image">
+        </div>
+        <div id="first-second">
+            <span><b>Success,Triumph</b></span><span style="color: rgb(154, 154, 170);">-July 31,2023</span>
+            <br>
+            <br>
+            <span style="color:rgb(36, 48, 114); font-size: 30px; font-weight: bold;">From Startup to Success: The Story of a Tech Entrepreneur.</span>
+            <br>
+            <span style="color: rgb(154, 154, 170);">Starting a business is never easy, but for tech entrepreneurs, it can be especially challenging. One such entrepreneur
+            is John, who founded a tech startup with the goal..........</span><span><a
+                    href="https://www.linkedin.com/pulse/from-startup-success-story-tech-entrepreneur-abhishek-jaiswal"
+                    style="color:rgb(241, 157, 29) ; text-decoration: none;"><b>Read
+                        more</b></a></span>
+            <br>
+            <br>
+            <img src="writer5.jpeg" alt="writer" style="width: 40px;height: 35px; border-radius: 50%;">
+            <span style="position: absolute;margin-left: 8px;margin-top: 8px;"><b>Chris Ortyio</b></span>
+
+
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <div id="second">
+        <div class="second-first">
+            <div class="second-first-first">
+                <img src="blog22.jpg" alt="blog22" class="image">
+                <br>
+                <br>
+                <span>
+                    <b>Success,Triumph</b></span><span style="color: rgb(154, 154, 170);">-July 31,2023
+                </span>
+                <br>
+                <br>
+                <span style="font-size: 20px;color: rgb(36, 48, 114); font-weight: bold;">From Garage to Global: Unforgettable Tech Startups'</span>
+                <br>
+                <span style="color:rgb(154, 154, 170) ;">
+                    In a world driven by innovation and technology, the success..........<a
+                        href="https://errolshakespeare.medium.com/from-garage-to-global-f3ae4e04f99d"
+                        style="text-decoration: none;color:rgb(241, 157, 29) ;"><b>Read More</b></a>
+                </span>
+                <br>
+                <br>
+                <img src="writer5.jpeg" alt="writer" style="width: 40px;height: 35px; border-radius: 50%;">
+                <span style="position: absolute;margin-left: 8px;margin-top: 8px;"><b>Chris Ortyio</b></span>
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <div class="second-first">
+            <div class="second-first-first">
+                <img src="blog23.jpeg" alt="blog23" class="image">
+                <br>
+                <br>
+                <span>
+                    <b>Success,Triumph</b></span><span style="color: rgb(154, 154, 170);">-July 31,2023
+                </span>
+                <br>
+                <br>
+                <span style="font-size: 20px;color: rgb(36, 48, 114); font-weight: bold;">African tech talent and the global demand.</span>
+                <br>
+                <span style="color:rgb(154, 154, 170) ;">
+                    Can you believe it? There are already over 700,000 professional...........<a
+                        href="https://www.linkedin.com/pulse/african-tech-talents-global-demands-wande-adams"
+                        style="text-decoration: none;color:rgb(241, 157, 29) ;"><b>Read More</b></a>
+                </span>
+                <br>
+                <br>
+                <img src="writer5.jpeg" alt="writer" style="width: 40px;height: 35px; border-radius: 50%;">
+                <span style="position: absolute;margin-left: 8px;margin-top: 8px;"><b>Chris Ortyio</b></span>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="second-first">
+            <div class="second-first-first">
+                <img src="blog24.jpg" alt="blog24" class="image">
+                <br>
+                <br>
+                <span>
+                    <b>Success,Triumph</b></span><span style="color: rgb(154, 154, 170);">-July 31,2023
+                </span>
+                <br>
+                <br>
+                <span style="font-size: 20px;color: rgb(36, 48, 114); font-weight: bold;">The Power of Perseverance: Inspiring Stories of Techies</span>
+                <br>
+                <span style="color:rgb(154, 154, 170) ;">
+                    Successful people never give up. They have a don't quit attitude that..........<a
+                        href="https://rhapsodystrategies.com/the-power-of-perseverance/"
+                        style="text-decoration: none;color:rgb(241, 157, 29) ;"><b>Read More</b></a>
+                </span>
+                <br>
+                <br>
+                <img src="writer5.jpeg" alt="writer" style="width: 40px;height: 35px; border-radius: 50%;">
+                <span style="position: absolute;margin-left: 8px;margin-top: 8px;"><b>Chris Ortyio</b></span>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+    
     
     <script type="text/javascript">
         window.addEventListener("load", function () {
@@ -202,6 +734,19 @@
             document.querySelector(".popup").style.display = "none";
             document.querySelector(".overlay").style.display = "none";
         });
+
+
+
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
     </script>
 </body>
 </html>

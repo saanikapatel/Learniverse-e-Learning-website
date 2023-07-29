@@ -5,269 +5,446 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learniverse</title>
-    <style>
-        body {
-            background-color: rgb(246, 246, 245);
-        }
-
-        #blue {
-            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-            color: rgb(36, 48, 114);
-            text-align: center;
-        }
-
-        #orange {
-            color: rgb(241, 157, 29);
-        }
-
-        #grey {
-            color: rgb(149, 149, 155);
-            text-align: center;
-            font-size: 15px;
-        }
-
-        #professionals {
-            display: flex;
-            flex-direction: row;
-            gap: 40px;
-            padding: 50px;
-            padding-top: 20px;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-
-        }
-
-        .teachers {
-            width: 150px;
-            height: 150px;
-        }
-
-        .teach {
-            padding: 50px;
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
-            width: 200px;
-            height: 200px;
-
-        }
-
-        #partner {
-            text-align: center;
-        }
-
-        #partners {
-            width: 100%;
-        }
-
-        #head {
-            display: flex;
-            flex-direction: row;
-        }
-
-        #goal {
-            width: 40%;
-        }
-        
-        
-        .popup {
-            background-color:rgb(250, 229, 201);
-            position: sticky;
-            width: 420px;
-            height: 600px;
-            padding: 30px 40px;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            left: 50%;
-            top: 50%;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        #newsletter {
-            display: flex;
-            justify-content: center;
-            
-        }
-        #newsletter img{
-            width: 420px;
-        }
-        #content{
-            display: flex;
-            flex-direction: row;
-            gap: 35px;
-            
-        }
-        #subscribe{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 25px;   
-        }
-        #updates{
-            font-size: 15px;
-        }
-        input[type="email"]{
-            border: none;
-            background-color: rgb(250, 229, 201);
-            width: 150px;
-            height: 50px;
-
-        }
-        input[type="submit"]:hover {
-      background-color: rgb(250, 229, 201); 
-    }
-    input[type="email"]:focus {
-      background-color:rgb(250, 229, 201);
-      border: none;
-    }
-    #foot{
-        display: flex;
-        justify-content: center;
-    }
-    a {
-            display: block;
-            width: 150px;
-            position: relative;
-            margin: 10px auto;
-            text-align: center;
-            background-color: hsl(212, 49%, 40%);
-            border-radius: 20px;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 8px 0;
-        }
-    
-        
-        .popup button {
-            display: block;
-            margin: 0 0 20px auto;
-            background-color: transparent;
-            font-size: 30px;
-            color: #ffffff;
-            background: hsl(212, 49%, 40%);
-            border-radius: 100%;
-            width: 40px;
-            height: 40px;
-            border: none;
-            outline: none;
-            cursor: pointer;
-        }
-       .overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
-        z-index: 999; 
-        pointer-events: none;
-    }
-
-
-        </style>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
-    <div id="head">
-        <div id="goal">
-            <h1>Find your <span>Course</span>& <br>make sure goal
-                <hr><br>Your dream courses is waiting for you.
-            </h1>
-        </div>
-        <div id="pic">
-            <img src="head.jpg" alt="pic">
-        </div>
-    </div>
-    <h1 id="blue">Our professional team will <br>teach you like a<br><span id="orange">professional</span><br><span
-            id="grey">You'll learn every single elements in these knowledges</span></h1>
-
-    <div id="professionals">
-        <div class="teach">
-            <img src="digi.jpeg" alt="cooper" class="teachers">
-            <h3><b>Cooper Kristin</b><br>Digital Marketing</h3>
-        </div>
-        <div class="teach">
-            <img src="ux.webp" alt="leslie" class="teachers">
-            <h3><b>Leslie Alexander</b><br>UI/UX Designer</h3>
-        </div>
-        <div class="teach">
-            <img src="front_end.jpeg" alt="robert" class="teachers">
-            <h3><b>Robert Fox</b><br>Front-End Developer</h3>
-        </div>
-        <div class="teach">
-            <img src="backend.webp" alt="albert" class="teachers">
-            <h3><b>Albert Flores</b><br>Back-End Developer</h3>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1 style="color: rgb(36, 48, 114);" id="partner">Our partners include technology<br><span
-            style="color: rgb(241, 157, 29);">Companies</span><span>,</span><span style="color: rgb(241, 157, 29)">Faith
-            Communities</span><span>,</span><br><span style="color:rgb(241, 157, 29)">Academia</span><span>, and
-            more.</span><br><span style="color: rgb(149, 149, 155); font-size: 15px;">We are pleased to work with
-            thousands of partners.</span></h1>
-    <div>
-        <img src="partners.png" alt="partners" id="partners">
-    </div>
 
 
 
 
-    
-    <div class="overlay"></div>
-    <div class="popup">
-        <button id="close">&times;</button>
-        <div id="newsletter">
-            <img src="1.svg" alt="newsletter">
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id="content">
-            <div id="subscribe"><b>Subscribe to our <br>newsletter</b>
+
+    <!-- page 1 -->
+
+    <nav class="navbar" id="navbar" style="flex-wrap: wrap;">
+        <a><img src="logo1.jpg" alt="logo" id="logo"></a>
+        <a href="#page_1" style="color: rgb(36, 48, 114);">Home</a>
+        <a href="#page_2" style="color:rgb(36, 48, 114) ;">Course Flow</a>
+        <a href="#page_3" style="color:rgb(36, 48, 114)">Courses</a>
+        <a href="#page_4" style="color:rgb(36, 48, 114)">Our Experts</a>
+        <a href="#blogs" style="color:rgb(36, 48, 114)">Magazine</a>
+        <a href="#page_5" style="color: rgb(36, 48, 114);">Partners</a>
+
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+    <div id="page_1" style="flex-wrap: wrap;">
+        <div id="head">
+            <div id="goal">
+                <h1>Find your <span style="color: rgb(241, 157, 29)">Course </span>& <br>make sure goal
+                    <hr><span style="color: rgb(36, 48, 114); font-size: 20px;">Your dream courses is waiting for
+                        you.</span><br><a href="signup.html" class="getstart">Get Started</a>
+                </h1>
+                <a href="login.html" id="login"><b>Login</b></a>
             </div>
-            <div id="updates"><i>
-                    Get weekly updates on the<br>latest educational news right in your mailbox.</i>
+            <div id="pic">
+                <img src="head.gif" alt="pic">
             </div>
-    
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+        <div id="big">
+            <div id="one">
+                <img src="circle.svg" alt="200">
+                <div class="centered"><b>150+</b>
+                </div>
+                <br>
+                <div id="four"><span class="contents" style="font-size: 12px;">Discover a vast array of knowledge with
+                        over 150+ branches of diverse
+                        subjects on our Learniverse platform.</span></div>
+            </div>
+
+            <div id="two">
+                <img src="circle.svg" alt="200">
+                <div class="centered"><b>200+</b></div>
+                <br>
+                <div id="four"><span class="contents" style="font-size: 12px;">Explore over 200 hours of engaging and
+                        comprehensive video lectures on our Learniverse platform.</span></div>
+
+            </div>
+
+            <div id="three"><img src="circle.svg" alt="200">
+                <div class="centered"><b>10K+</b></div>
+                <br>
+                <div id="four"><span class="contents" style="font-size: 12px;">Join our e-learning platform with 10k+
+                        students already enrolled in the course. Experience top-notch education and
+                        become a part of our family.</span></div>
+            </div>
+
         </div>
         <br>
         <br>
         <br>
-    
-    
-        <div id="foot">
-            <input type="email" name="email" placeholder="Your Email">
-            <a href="#">Subscribe</a>
-        </div>
-        <hr style="color: black; height: 2px ;">
+        <br>
+        <br>
+        <br>
     </div>
-    <script type="text/javascript">
-        window.addEventListener("load", function () {
-            setTimeout(
-                function open(event) {
-                    document.querySelector(".overlay").style.display = "block";
-                    document.querySelector(".popup").style.display = "block";
-                    
-                },
-                2000
-            )
-        });
 
 
-        document.querySelector("#close").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "none";
-            document.querySelector(".overlay").style.display = "none";
-        });
-    </script>
+
+
+
+
+    <!-- page2 -->
+    <div id="page_2" style="flex-wrap: wrap;">
+        <h1 id="Course_flow"><b>Course <span style="color: rgb(241, 157, 29);">Flow</span></b></h1>
+        <br>
+        <div id="page2">
+            <div id="syllabus">
+                <div id="num1"><img src="num1.svg" alt="num1" class="pictures"><span
+                        style="color: rgb(36, 48, 114);font-family: Arial, Helvetica, sans-serif; font-size:24px;">Course
+                        Introduction and Overview </span><br><br><span style="font-family: cursive;
+        font-size: 18px;">Welcome learners and present the course objectives.
+                        Provide an outline of the course structure and topics covered.</span>
+                    <span id="arrow1" style="position: absolute; left:40%"><img src="connect.svg" alt="connect"
+                            class="pictures"></span>
+                </div>
+                <div id="num2"><img src="num3.svg" alt="num2" class="pictures"><span
+                        style="color: rgb(36, 48, 114);font-family: Arial, Helvetica, sans-serif;font-size: 24px;">Learning
+                        Modules or Lessons</span><br><br><span style="font-family: cursive;
+                font-size: 18px;">Deliver engaging content using text, images, and interactive elements.
+                        Include quizzes and activities to reinforce learning and track progress.
+                    </span><span id="arrow2" style="position: absolute; left:37%"><img src="connect.svg" alt="connect"
+                            class="pictures"></span></div>
+                <div id="num3">
+                    <img src="num1.svg" alt="num3" class="pictures"><span
+                        style="color: rgb(36, 48, 114);font-family: Arial, Helvetica, sans-serif;font-size: 24px;">Course
+                        Completion and Assessment</span><br><br><span
+                        style="font-family: cursive;font-size: 18px;">Assess learners' understanding with a final exam
+                        or assessment.
+                        Offer completion certificates to successful learners and gather feedback for continuous
+                        improvement.
+                    </span>
+                </div>
+            </div>
+            <div id="man">
+                <img src="man.svg" alt="man" class="pictures">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+
+
+
+    <!-- page3 -->
+    <div id="page_3">
+        <div id="courses">
+            <h1 id="blue">Our Education system will give you the<br><span id="orange">Perfect solution</span><br><span
+                    id="grey">You'll acquire the tools you need to create illustrations using<br>a variety of techniques
+                    and artistic styles.</span></h1>
+        </div>
+
+        <div id="icons">
+            <div id="digimark" class="icon">
+                <br>
+                <h2 style="text-align: center ;color: rgb(36, 48, 114);">Digital Marketing</h2>
+                <p style="color: rgb(96, 96, 112); text-align: center; font-size: 18px; padding: 10px;">"Unlock your
+                    online potential with our comprehensive digital marketing course! Learn how to effectively promote
+                    and grow
+                    your elearning business."</p>
+                <img src="pie.svg" alt="Digital Marketing">
+                <a href="one.html" class="readmore">Read more --></a>
+            </div>
+            <div id="UI" class="icon">
+                <br>
+                <h2 style="text-align: center ;color: rgb(36, 48, 114);">UI/UX</h2>
+                <p style="color: rgb(96, 96, 112); text-align: center; font-size: 18px; padding: 10px;">"Learn how to
+                    create stunning user interfaces (UI) and design seamless user experiences (UX) with our
+                    comprehensive
+                    eLearning course."</p>
+
+                <img src="clock.svg" alt="UI/UX">
+                <a href="two.html" class="readmore">Read more --></a>
+            </div>
+            <div id="front" class="icon">
+                <br>
+                <h2 style="text-align: center ;color: rgb(36, 48, 114);">Web Development</h2>
+                <p style="color: rgb(96, 96, 112); text-align: center; font-size: 18px; padding: 10px;">"Unlock your web
+                    development potential with our comprehensive eLearning course! Join today and embark on your journey
+                    to becoming a skilled web developer!"</p>
+                <img src="panel.svg" alt="front Front-End">
+                <a href="three.html" class="readmore">Read more --></a>
+
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+
+
+
+    <!-- page4 -->
+    <div id="page_4">
+        <h1 id="blue">Our professional team will <br>teach you like a<br><span id="orange">professional</span><br><span
+                id="grey">You'll learn every single elements in these knowledges</span></h1>
+        <div id="professionals" style="flex-wrap: wrap; border-radius: 25px;">
+            <div class="teach">
+                <img src="teacher5.jpeg" alt="cooper" class="teachers">
+                <h3 style="text-align: center; color: rgb(36, 48, 114);"><b>Cooper Kristin</b><br><span
+                        style="color: rgb(241, 157, 29);">Digital Marketing</span></h3>
+            </div>
+            <div class="teach">
+                <img src="teacher2.jpg" alt="leslie" class="teachers">
+                <h3 style="text-align: center;color: rgb(36, 48, 114)"><b>Leslie Alexander</b><br><span
+                        style="color: rgb(241, 157, 29);">UI/UX Designer</span></h3>
+            </div>
+            <div class="teach">
+                <img src="teacher 3.jpg" alt="robert" class="teachers">
+                <h3 style="text-align: center;
+            color: rgb(36, 48, 114)
+             "><b>Robert Fox</b><br><span style="color: rgb(241, 157, 29);">Front-End Developer</span></h3>
+            </div>
+            <div class="teach">
+                <img src="teacher4.jpeg" alt="albert" class="teachers">
+                <h3 style="text-align: center;color: rgb(36, 48, 114) "><b>Albert Flores</b><br><span
+                        style="color: rgb(241, 157, 29);">Back-End Developer</span></h3>
+            </div>
+        </div>
+        <button id="knowmore" style="flex-wrap: wrap;"><a href="knowmore.html"><span style="color: white;">Know more
+                    about our experts</span></a></button>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+
+
+
+    <h1 style="text-align: center;"><span style="color:rgb(36, 48, 114) ;">Students</span> <span
+            style="color: rgb(241, 157, 29);">Reviews</span></h1>
+    <br>
+    <br>
+    <br>
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+    <div id="stdnt">
+        <div class="swiper-slide">
+        <div id="student1">
+            <img src="student1.png" alt="student1">
+            <h2 style="color: rgb(36, 48, 114); text-align: center;">Nicolus Warne</h2>
+            <p style="font-size: 18px; text-align: center;color: rgb(85, 85, 91);">"This online course exceeded my
+                expectations! The content was engaging and well-structured, making learning enjoyable."</p>
+        </div>
+        </div>
+        <div class="swiper-slide">
+        <div id="student2">
+            <img src="student2.png" alt="student1">
+
+            <h2 style="color: rgb(36, 48, 114); text-align: center;">Isabella Johnson</h2>
+            <p style="font-size: 18px; text-align: center;color: rgb(85, 85, 91);">"I'm thrilled with the knowledge I
+                gained from this online course! The practical examples and real-world applications
+                were incredibly valuable. "</p>
+        </div>
+        </div>
+
+        <div class="swiper-slide">
+        <div id="student3">
+            <img src="student3.png" alt="student1">
+            <h2 style="color: rgb(36, 48, 114); text-align: center;">Sophia Martinez</h2>
+            <p style="font-size: 18px; text-align: center;color: rgb(85, 85, 91);">"Enrolling in this online course was
+                a game-changer for me! The in-depth video lectures and downloadable resources made
+                studying convenient."</p>
+        </div>
+        </div>
+</div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <!-- blogs -->
+    <div id="blogs">
+        <h1 style="text-align: center;"><span style="color: rgb(36, 48, 114);">Latest News <span
+                    style="color: rgb(241, 157, 29);;">And</span> Resources</span><br><span
+                style="color: rgb(149, 149, 155); font-size: 15px;">Unlock your learning potential with our educational
+                specialists</span></h1>
+        <br>
+        <br>
+
+        <div id="main">
+            <div id="left" style="padding-left: 100px;">
+                <img src="blog1.jpg" alt="blog1" style="width: 400px; border-radius:25px;"><br><br><span
+                    style="color: rgb(241, 157, 29);"><b>Latest article</b></span><br><br><span
+                    style="color:rgb(36, 48, 114) ; font-size: 24px;"><b>5 Ways to increase your reading
+                        speed.</b></span><br><br>
+                <span style="color: rgb(154, 154, 170);">Do you find that “boring” documents take you longer to get
+                    through versus a fun fantasy novel you're itching to
+                    find out
+                    how the story ends? You are not alone! Why you read one piece of text faster than the other could
+                    very well depend
+                    on
+                    your interest in the............</span>
+                <br>
+                <br>
+                <br>
+                <span><b><a href="blog.html" style="text-decoration: none; color: rgb(241, 157, 29);">Learn
+                            more--></a></b></span>
+
+            </div>
+
+
+            <div id="right">
+
+
+                <div id="right-left">
+                    <div id="blog1">
+                        <img src="blog2.webp" alt="blog2">
+                        <br>
+                        <button class="button1"><a
+                                href="https://medium.com/startup-grind/how-lifelong-learning-and-a-growth-mindset-can-propel-your-career-c5fd680f4069"
+                                style="text-decoration: none; color: white;">Learn --></a></button>
+                    </div>
+                    <div id="blog2">
+                        <img src="blog3.jpg" alt="blog3">
+                        <br>
+                        <button class="button1"><a href="https://www.betterup.com/blog/different-learning-styles"
+                                style="text-decoration: none; color: white;">Learn --></a></button>
+                    </div>
+                    <div id="blog3">
+                        <img src="blog4.jpg" alt="blog4">
+                        <br>
+                        <button class="button1"><a
+                                href="https://www.vidyadharaconsultancy.com/unleashing-creativity-in-the-classroom/"
+                                style="text-decoration: none; color: white;">Learn --></a></button>
+                    </div>
+                </div>
+
+                <div id="right-right">
+                    <div id="b2">
+                        <span style="font-size: 24px; color: rgb(36, 48, 114);"><b>How Lifelong Learning and a Growth
+                                Mindset Can Propel Your Career.</b></span><br><br>
+                        <span style="color: rgb(154, 154, 170);">Many people believe once they've earned all the degrees
+                            needed for their dream job, their learning days are over...</span>
+                    </div>
+
+
+                    <div id="b3">
+                        <span style="font-size: 24px; color: rgb(36, 48, 114);"><b>How different learning styles make a
+                                difference at work.</b></span><br><br>
+                        <span style="color: rgb(154, 154, 170);">A learning style can be thought of as an individuals
+                            unique way of learning that fits them best.You may have noticed...</span>
+
+                    </div>
+                    <div id="b4">
+                        <span style="font-size: 24px; color: rgb(36, 48, 114);"><b>The Art of Cultivating Creativity in
+                                the Classroom.
+                            </b></span><br><br>
+                        <span style="color: rgb(154, 154, 170);">Welcome to the fascinating world where imagination
+                            knows no boundary and creativity takes centre stage! In this...</span>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <!-- page5 -->
+    <div id="page_5">
+        <h1 style="color: rgb(36, 48, 114);" id="partner">Our partners include technology<br><span
+                style="color: rgb(241, 157, 29);">Companies</span><span>,</span><span
+                style="color: rgb(241, 157, 29)">Faith Communities</span><span>,</span><br><span
+                style="color:rgb(241, 157, 29)">Academia</span><span>, and more.</span><br><span
+                style="color: rgb(149, 149, 155); font-size: 15px;">We are pleased to work with thousands of
+                partners.</span></h1>
+        <div>
+            <img src="partners.png" alt="partners" id="partners">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Learniverse</div>
+            <div class="footer-links">
+
+                <a href="#">About</a>
+                <a href="#stdnt">Reviews</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="refund.html">Refund Policy</a>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="test.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>

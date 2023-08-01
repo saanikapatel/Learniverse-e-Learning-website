@@ -213,4 +213,21 @@
 .image:hover{
     transform: scale(1.1);
 }
+
+
+
+.slide-in-bottom {
+    transform: translateY(100%);
+    animation: slideInBottom 3s ease-in-out forwards;
+}
+
+@keyframes slideInBottom {
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
+
   

@@ -282,6 +282,23 @@
     top: 15px;
     border-radius: 50%;
 }
+
+.about{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    
+ }
+ #about{
+    margin-top: 200px;
+    width: 45%;
+    margin-left: 80px;
+ }
+ #pic img{
+    margin-top: 20px;
+    width: 600px;
+ }
+ 
     
 
     </style>
@@ -290,7 +307,7 @@
 <body>
 
     <nav class="navbar" id="navbar" style="flex-wrap: wrap;">
-        <a><img src="logo1.jpg" alt="logo" id="logo"></a>
+        <a><img src="logo3.jpg" alt="logo" id="logo"></a>
         <a href="home2.html" style="color: rgb(36, 48, 114);">Home</a>
         <a href="home2.html" style="color:rgb(36, 48, 114) ;">Course Flow</a>
         <a href="home2.html" style="color:rgb(36, 48, 114)">Courses</a>
@@ -303,13 +320,20 @@
 
     
 
-    <div class="intro">
-        
-        <h1 class="line">WEB<br>DEVELOPMENT<br><p style="font-size: 20px; color: rgb(241, 157, 29);">Become a full stack web developer with just one course!<p></p> </h1>
-        <video width="750px" height="450px" autoplay loop>
-            <source src="wdc5.mp4" type="video/mp4">
-          </video>
+    <div class="about">
+        <div id="about">
+            <span style="font-size: 60px;font-weight: bold;color: rgb(36, 48, 114);">Web</span><span
+                style="font-size: 60px;font-weight: bold; color: rgb(241, 157, 29);"> Development</span>
+            <hr><span style="font-size: 20px;color:rgb(36, 48, 114) ;font-weight: bold;">Become a full stack web developer with just one course!!!</span>
+        </div>
+        <div id="pic">
+            <img src="webdev.gif" alt="about">
+        </div>
     </div>
+    <br>
+    <br>
+    <br>
+
 </div>
 
 <div class="main">
